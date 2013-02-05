@@ -11,10 +11,12 @@ import javax.swing.JOptionPane;
  * @author bspor
  */
 public class GUIInputStrategy implements InputStrategy {
-    private int messageType = 1;
+    private String messageType = "Text";
+    private String input;
     
     @Override
-    public void inputMessage(String input) {
-        input = JOptionPane.showInputDialog("Please enter your text", messageType);   
+    public String inputMessage() {
+        input = JOptionPane.showInputDialog("Please enter your text", messageType); 
+        return input;
     }
 }

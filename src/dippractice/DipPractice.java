@@ -15,12 +15,13 @@ public class DipPractice {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        InputStrategy in = new ConsoleInputStrategy();
-        
+        //InputStrategy in = new ConsoleInputStrategy();
+        InputStrategy in = new GUIInputStrategy();
+     
         //OutputStrategy out = new ConsoleOutputStrategy();
+        OutputStrategy out = new GUIOutputStrategy();
         
-        MessageService service = new MessageService();
-        
+        MessageService service = new MessageService(in, out);
         
         service.outputMessage();
         

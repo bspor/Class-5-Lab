@@ -11,11 +11,13 @@ import java.util.Scanner;
  * @author bspor
  */
 public class ConsoleInputStrategy implements InputStrategy {
-    
+    private String input;
+
     @Override
-    public void inputMessage(String input) {
+    public String inputMessage() {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Please enter your text: ");
         input = keyboard.nextLine();
+        return input;
     }
 }
