@@ -6,7 +6,7 @@ package dippractice;
  * @author bspor
  */
 public class MessageService {
-   private static final String MSG = "Hello!";
+//   private static final String ;;
    private InputStrategy in;
    private OutputStrategy out;
 
